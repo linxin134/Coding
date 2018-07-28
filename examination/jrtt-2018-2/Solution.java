@@ -161,6 +161,12 @@ public class Solution {
         if(left==-1 && right==-1){
             return 0;
         }
+        if(query[0]-1>right){
+            return 0;
+        }
+        if(query[1]-1<left){
+            return 0;
+        }
         int start = findRange(arr,query[0]-1,left,right);
         int end = findRange(arr,query[1]-1,left,right);
         if(start==-1&&end==-1){
