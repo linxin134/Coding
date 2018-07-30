@@ -32,7 +32,7 @@ import java.util.Scanner;
  第二组询问对于标号[2,4]的用户喜好值为5的用户的个数是0
  第三组询问对于标号[3,5]的用户喜好值为3的用户的个数是2
  **/
-public class Solution {
+public class SolutionOne {
     static class Node{
         private int index;
         private int val;
@@ -182,7 +182,7 @@ public class Solution {
     }
 
     public static void main(String[] args){
-        Solution solution = new Solution();
+        SolutionOne solution = new SolutionOne();
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         Node[] arr = new Node[n];
