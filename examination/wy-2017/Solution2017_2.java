@@ -1,5 +1,4 @@
-import java.util.HashSet;
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * @author
@@ -18,21 +17,11 @@ public class Solution2017_2 {
         return x/y;
     }
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        int n;
-        n=sc.nextInt();
-        int ball[] = new int[n];
-        for(int i=0;i<n;i++){
-            ball[i] = sc.nextInt();
-        }
-        int countNotOne=0;
-        HashSet<Integer> set = new HashSet<>();
-        for(int i=0;i<n;i++){
-           if(ball[i] != 1){
-               set.add(ball[i]);
-           }
-        }
-        //for
-
+        Integer[] a = {1,1,2,2,2,3,3,3,3,4,5,5,6,8,8};
+        Integer r=Arrays.binarySearch(a,9);
+        List<String> list= new ArrayList<>();
+        System.out.println(r);
     }
+
+
 }

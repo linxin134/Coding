@@ -86,7 +86,7 @@ public class Solution2 {
                 works[i].setPi(works[i-1].getPi());
             }
         }
-        Solution2 s= new Solution2();
+        Solution_2 s= new Solution_2();
         for(int i = 0;i<m;i++){
             System.out.println(s.getSuitPi(ai[i],works));
         }
